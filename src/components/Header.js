@@ -35,9 +35,9 @@ const Header = props => (
         </li>
         <li>
           <a
-            href="javascript:;"
+            href="/resume"
             onClick={() => {
-              props.onOpenArticle("resume");
+              console.log("opening resume");
             }}
           >
             RSUME

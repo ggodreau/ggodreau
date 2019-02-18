@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import "font-awesome/css/font-awesome.css";
+import "font-awesome/css/font-awesome.css";
 import "../assets/css/styles-6.css";
-import Section from "./section";
-import Sidebar from "./sidebar";
-import Experiences from "./experiences";
-import Projects from "./projects";
-import Tags from "./tags";
+import Section from "./resume/section";
+import Sidebar from "./resume/sidebar";
+import Experience from "./resume/experience";
+import Projects from "./resume/projects";
+import Tags from "./resume/tags";
 
 export default class CV extends Component {
-  renderExperiencesSection() {
-    if (this.props.experiences) {
-      return <Experiences {...this.props.experiences} />;
+  renderExperienceSection() {
+    if (this.props.experience) {
+      console.log("exp: ", ...this.props.experience);
+      return <Experience {...this.props.experience} />;
     }
     return null;
   }
@@ -29,17 +30,6 @@ export default class CV extends Component {
       return <Tags {...this.props.tags} />;
     }
     return null;
-  }
-
-  renderOpenSourcePart() {
-    return (
-      <div>
-        You can create your own CV like this,
-        <a href="https://github.com/sbayd/react-cv-template" target="_blank">
-          access to the source code.
-        </a>
-      </div>
-    );
   }
 
   renderCareerProfile() {
@@ -67,10 +57,9 @@ export default class CV extends Component {
         <Sidebar {...this.props.profile} />
         <div className="main-wrapper">
           {this.renderCareerProfile()}
-          {this.renderExperiencesSection()}
+          {this.renderExperienceSection()}
           {this.renderProjectsSection()}
           {this.renderTags()}
-          {this.renderOpenSourcePart()}
         </div>
       </div>
     );
@@ -80,7 +69,7 @@ export default class CV extends Component {
 CV.propTypes = {
   profile: PropTypes.shape().isRequired,
   careerProfile: PropTypes.shape().isRequired,
-  experiences: PropTypes.shape().isRequired,
+  experience: PropTypes.shape().isRequired,
   projects: PropTypes.shape().isRequired,
   tags: PropTypes.shape().isRequired
 };

@@ -2,7 +2,7 @@ export const projects = {
   sectionTitle: "",
   icon: null,
   description:
-    "Projects, i have completed & attended are listed below. To get general information about private project or not-finished projects you can get in touch.",
+    "Here are some projects I've worked on in the past. Drop me a line if you have any questions.",
   categories: [
     {
       name: "Personal",

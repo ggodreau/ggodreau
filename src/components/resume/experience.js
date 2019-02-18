@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Section from './section';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Section from "./section";
 
-export default class Experiences extends Component {
+export default class Experience extends Component {
   renderListItem(item, i) {
     return (
       <div className="item" key={`exp_item_${i}`}>
@@ -11,7 +11,11 @@ export default class Experiences extends Component {
             <h3 className="job-title">{item.title}</h3>
             <div className="time">{item.date}</div>
           </div>
-          {this.renderCompanySection(item.company, item.companyLink, item.companyShortDetail)}
+          {this.renderCompanySection(
+            item.company,
+            item.companyLink,
+            item.companyShortDetail
+          )}
         </div>
         <div className="details">
           <p dangerouslySetInnerHTML={{ __html: item.description }} />
@@ -21,7 +25,15 @@ export default class Experiences extends Component {
   }
   renderCompanySection(company, companyLink, companyShortDetail) {
     if (company && companyLink) {
-      return (<div className="company"> <a href={companyLink} target="_blank">{company}</a> {companyShortDetail || ''}</div>);
+      return (
+        <div className="company">
+          {" "}
+          <a href={companyLink} target="_blank">
+            {company}
+          </a>{" "}
+          {companyShortDetail || ""}
+        </div>
+      );
     }
     return null;
   }
@@ -30,8 +42,8 @@ export default class Experiences extends Component {
     return (
       <Section
         className="experieces-section"
-        icon={icon || 'briefcase'}
-        title={sectionTitle || 'Experiences'}
+        icon={icon || "briefcase"}
+        title={sectionTitle || "Experience"}
         id="experiences"
       >
         {list.map((item, i) => {
@@ -42,9 +54,8 @@ export default class Experiences extends Component {
   }
 }
 
-Experiences.propTypes = {
+Experience.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   sectionTitle: PropTypes.string.isRequired,
   icon: PropTypes.string
 };
-

@@ -6,7 +6,7 @@ const profile = {
   website: "godreau.xyz",
   linkedin: "linkedin.com/in/godreau",
   github: "github.com/ggodreau",
-  imagePath: "profile.png",
+  imagePath: null,
   twitter: null,
   educationDetails: {
     sectionTitle: "",
