@@ -34,77 +34,79 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="/page-2">awesome work</a>.
+            I'm Gregory Godreau. I'd say I'm a software developer but that's a
+            bit of a stretch. Let's be honest - I'm really just some guy with a
+            computer and an internet connection.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            I live two lives. One life is as a data science instructor /
+            curriculum developer for
+            <a
+              href="https://generalassemb.ly/instructors/gregory-gordeau/15006"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              General Assembly.{" "}
+            </a>
+            The other life is as a remote contract developer for startups.
+            Outside that, I spend pretty much all my free time building
+            projects, learning new things, and trying to contribute to the open
+            source community.
+            <a
+              href="https://knowyourmeme.com/memes/but-its-honest-work"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              It ain't much, but it's honest work.{" "}
+            </a>
+          </p>
+          <p>
+            Although I work with a bunch of different stacks and tools,{" "}
+            <i>my focus is generally on data and devops.</i> I place a lot of
+            value on being able to operationalize pipelines at production scale.
+          </p>
+          <p>
+            Feel free to check out
+            <a href="/page-2" target="_blank" rel="noopener noreferrer">
+              {" "}
+              my work{" "}
+            </a>
+            and drop me a line in the contact form if there's anything I can
+            help you with. Thanks for reading.
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === "work" ? "active" : ""} ${
+          id="projects"
+          className={`${this.props.article === "projects" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Projects</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <p>My projects paragraph 1</p>
+          <p>My projects paragraph 2</p>
           {close}
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === "about" ? "active" : ""} ${
+          id="resume"
+          className={`${this.props.article === "resume" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Resume</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <p>resume section</p>
           {close}
         </article>
 
@@ -140,23 +142,43 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <a href="#" className="icon fa-twitter">
+              <a
+                href="https://www.github.com/ggodreau"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/godreau"
+                className="icon fa-linkedin-square"
+              >
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/jesuisgreg"
+                className="icon fa-twitter"
+              >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-facebook">
-                <span className="label">Facebook</span>
+              <a
+                href="https://austin-deep-learning.slack.com"
+                className="icon fa-slack"
+              >
+                <span className="label">Slack</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon fa-github">
-                <span className="label">GitHub</span>
+              <a
+                href="https://youtube.com/channel/UC0VSRc1kNM68xRgs8rqESMg"
+                className="icon fa-youtube-play"
+              >
+                <span className="label">YouTube</span>
               </a>
             </li>
           </ul>

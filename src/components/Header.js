@@ -6,14 +6,8 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>
-          <span className="brack">[</span>
           <span className="first">godreau</span>
-          <span>.</span>
-          <span className="b1">x</span>
-          <span className="b2">y</span>
-          <span className="b3">z</span>
-          <span className="brack">]</span>
-          <span>$</span>
+          <span className="b1">.xyz</span>
         </h1>
       </div>
     </div>
@@ -33,20 +27,20 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle("work");
+              props.onOpenArticle("projects");
             }}
           >
-            WORK
+            PRJCTS
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle("about");
+              props.onOpenArticle("resume");
             }}
           >
-            ABOUT
+            RSUME
           </a>
         </li>
         <li>
@@ -56,7 +50,7 @@ const Header = props => (
               props.onOpenArticle("contact");
             }}
           >
-            CONTACT
+            CNTCT
           </a>
         </li>
       </ul>
