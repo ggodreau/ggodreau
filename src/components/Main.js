@@ -63,14 +63,13 @@ class Main extends React.Component {
             </a>
           </p>
           <p>
-            Although I work with a bunch of different stacks and tools{" "}
-              my focus is generally on data and devops.
-            I place a lot of value on being able to operationalize pipelines at
-            production scale.
+            Although I work with a bunch of different stacks and tools my focus
+            is generally on data and devops. I place a lot of value on being
+            able to operationalize pipelines at production scale.
           </p>
           <p>
             Feel free to check out
-            <a href="/page-2" target="_blank" rel="noopener noreferrer">
+            <a href="/resume" target="_blank" rel="noopener noreferrer">
               {" "}
               my work{" "}
             </a>

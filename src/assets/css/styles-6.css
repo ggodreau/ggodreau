@@ -14,6 +14,10 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  color: #3f4650;
+  letter-spacing: 0.1rem;
+  letter-spacing-heading: 0.6rem;
+  text-transform: none;
 }
 a {
   color: #2e4049;
@@ -42,7 +46,7 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: #000000;
+  background: #424242;
   position: absolute;
   right: 0;
   width: 240px;
@@ -54,15 +58,15 @@ p {
   color: #fff;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
   text-align: center;
   color: #fff;
 }
 .sidebar-wrapper .name {
-  font-size: 32px;
-  font-weight: 900;
-  margin-top: 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .sidebar-wrapper .tagline {
@@ -90,7 +94,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 20px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
@@ -98,6 +102,7 @@ p {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
+  color: #fff;
 }
 .sidebar-wrapper .degree {
   font-size: 14px;

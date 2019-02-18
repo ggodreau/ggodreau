@@ -1,22 +1,19 @@
 export const tags = {
-  sectionTitle: '',
+  sectionTitle: "",
   icon: null,
   list: [
-    'Javascript',
-    'ReactJS',
-    'ReactNative',
-    'Redux',
-    'Webpack',
-    'Npm/Yarn',
-    'Git',
-    'C#',
-    'ASP.NETMVC',
-    'PHP',
-    'SOLID PRINCIPLES',
-    'XAMARIN',
-    'LINQ',
-    'N-TIER ARCHITECTURE',
-    'SOA ARCHITECTURE']
+    "Python",
+    "Flask",
+    "Git",
+    "Tensorflow",
+    "Kubernetes",
+    "Kubeflow",
+    "Ksonnet",
+    "Terraform",
+    "Docker",
+    "GCP",
+    "AWS"
+  ]
 };
 
 export default tags;

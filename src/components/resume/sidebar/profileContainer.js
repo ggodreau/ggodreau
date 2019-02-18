@@ -1,10 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class ProfileContainer extends Component {
   renderProfilePicture(imagePath) {
     if (imagePath) {
-      return (<img className="profile" src={imagePath} alt="" style={{ maxWidth: 185 }} />);
+      return (
+        <img
+          className="profile"
+          src={imagePath}
+          alt=""
+          style={{ maxWidth: 185 }}
+        />
+      );
     }
     return null;
   }
@@ -12,8 +19,8 @@ export default class ProfileContainer extends Component {
     return (
       <div className="profile-container">
         {this.renderProfilePicture(this.props.imagePath)}
-        <h1 className="name" style={{ fontSize: 25 }}>{ this.props.name }</h1>
-        <h3 className="tagline"> { this.props.title } </h3>
+        <h1 className="name">{this.props.name}</h1>
+        <h3 className="tagline"> {this.props.title} </h3>
       </div>
     );
   }

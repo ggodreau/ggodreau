@@ -6,8 +6,8 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>
-          <span className="first">godreau</span>
-          <span className="b1">.xyz</span>
+          <span className="first">GODREAU</span>
+          <span className="b1">.XYZ</span>
         </h1>
       </div>
     </div>

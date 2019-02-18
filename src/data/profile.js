@@ -1,6 +1,6 @@
 const profile = {
   name: "Gregory Godreau",
-  title: "Software Developer",
+  title: null,
   mail: "resume@godreau.xyz",
   phoneNumber: "+001 XXX 333 4788",
   website: "godreau.xyz",
