@@ -63,13 +63,13 @@ class Main extends React.Component {
             </a>
           </p>
           <p>
-            Although I work with a bunch of different stacks and tools,{" "}
-            <i>my focus is generally on data and devops.</i> I place a lot of
-            value on being able to operationalize pipelines at production scale.
+            Although I work with a bunch of different stacks and tools my focus
+            is generally on data and devops. I place a lot of value on being
+            able to operationalize pipelines at production scale.
           </p>
           <p>
             Feel free to check out
-            <a href="/page-2" target="_blank" rel="noopener noreferrer">
+            <a href="/resume" target="_blank" rel="noopener noreferrer">
               {" "}
               my work{" "}
             </a>
@@ -106,7 +106,14 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>resume section</p>
+          <p>
+            check out
+            <a href="/resume" target="_blank" rel="noopener noreferrer">
+              {" "}
+              my work{" "}
+            </a>
+            NOW
+          </p>
           {close}
         </article>
 

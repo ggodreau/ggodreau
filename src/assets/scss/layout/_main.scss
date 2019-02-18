@@ -29,6 +29,19 @@
     border-radius: _size(border-radius);
     opacity: 0;
 
+    p {
+      color: #00ff00;
+      opacity: 0.75;
+      font-weight: 400;
+    }
+    .emphasis {
+      color: #ff00ee;
+      opacity: 1;
+    }
+    a {
+      color: #00cbff;
+      opacity: 0.9;
+    }
     &.timeout {
       display: none;
     }
