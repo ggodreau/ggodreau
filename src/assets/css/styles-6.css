@@ -40,6 +40,9 @@ p {
 span {
   color: #2e4049;
 }
+div .wrapperwrap {
+  background: #00FFFF;
+}
 .wrapper {
   background: #4b6a78;
   max-width: 960px;
