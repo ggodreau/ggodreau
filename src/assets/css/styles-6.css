@@ -35,6 +35,7 @@ a:focus {
 }
 p {
   line-height: 1.5;
+  color: #2e4049;
 }
 .wrapper {
   background: #4b6a78;
@@ -187,6 +188,7 @@ p {
 }
 .main-wrapper .experiences-section .item {
   margin-bottom: 30px;
+  text-color: #F0F;
 }
 .main-wrapper .upper-row {
   position: relative;
