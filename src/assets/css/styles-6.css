@@ -37,6 +37,9 @@ p {
   line-height: 1.5;
   color: #2e4049;
 }
+span {
+  color: #2e4049;
+}
 .wrapper {
   background: #4b6a78;
   max-width: 960px;

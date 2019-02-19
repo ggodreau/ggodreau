@@ -7,7 +7,9 @@ import Layout from "../components/layout";
 
 const resume = () => (
   <div>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/" target="_blank" rel="noopener noreferrer">
+      Go back to the homepage
+    </Link>
     <p />
     <CV {...Data} />
   </div>
