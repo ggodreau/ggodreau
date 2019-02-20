@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
+import Data from "../data";
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -105,6 +106,7 @@ class IndexPage extends React.Component {
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
+              {...Data}
             />
             <Footer timeout={this.state.timeout} />
           </div>

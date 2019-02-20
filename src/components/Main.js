@@ -1,11 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Projects from "./Projects";
+
 import pic01 from "../images/pic01.jpg";
 import pic02 from "../images/pic02.jpg";
 import pic03 from "../images/pic03.jpg";
 
 class Main extends React.Component {
+  renderProjectsSection() {
+    if (this.props.projects) {
+      return <Projects {...this.props.projects} />;
+    }
+    return <div>hello world</div>;
+  }
+
   render() {
     let close = (
       <div
@@ -42,6 +51,7 @@ class Main extends React.Component {
             I live two lives. One life is as a data science instructor /
             curriculum developer for
             <a
+              style={{ color: "#00FF00" }}
               href="https://generalassemb.ly/instructors/gregory-gordeau/15006"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,6 +64,7 @@ class Main extends React.Component {
             projects, learning new things, and trying to contribute to the open
             source community.
             <a
+              style={{ color: "#00FF00" }}
               href="https://knowyourmeme.com/memes/but-its-honest-work"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,12 +80,17 @@ class Main extends React.Component {
           </p>
           <p>
             Feel free to check out
-            <a href="/resume" target="_blank" rel="noopener noreferrer">
+            <a
+              style={{ color: "#00FF00" }}
+              href="/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
-              my work{" "}
+              my resume{" "}
             </a>
-            and drop me a line in the contact form if there's anything I can
-            help you with. Thanks for reading.
+            and drop me a line if there's anything I can help you with. Thanks
+            for reading.
           </p>
           {close}
         </article>
@@ -90,8 +106,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>My projects paragraph 1</p>
-          <p>My projects paragraph 2</p>
+          <Projects {...this.props.projects} />
           {close}
         </article>
 
@@ -202,7 +217,8 @@ Main.propTypes = {
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired
+  setWrapperRef: PropTypes.func.isRequired,
+  projects: PropTypes.shape().isRequired
 };
 
 export default Main;
