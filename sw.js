@@ -26,24 +26,28 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-aca32fdbee873b12bf50.js"
+    "url": "webpack-runtime-1395322007fafc935f05.js"
   },
   {
     "url": "commons-74b60a9918fa24d64ea9.js"
   },
   {
-    "url": "app-f5269f7567e7bb9de63f.js"
+    "url": "app-c1f0ca817b653526a689.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ec1da19b77b8d79a622f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7f93dc5fa7778a6f1e2e1e1a771354bc"
+    "revision": "394894c564d6f15ab20a63a87a3e8bc1"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "c355c8040c47a63bfb3360e4b7cb6553"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "8f9b41a9e66710e03de39ce5a5850c8a"
+    "revision": "083be61365f161b7d27c24692c935867"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -62,12 +66,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/ggodreau`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-f5269f7567e7bb9de63f.js`))) {
+  if (!resources || !(await caches.match(`/ggodreau/app-c1f0ca817b653526a689.js`))) {
     return await fetch(event.request)
   }
 
@@ -80,7 +84,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/ggodreau/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
